@@ -3,7 +3,7 @@ A status page to see some useful stats of your machine! You can also watch how m
 
 
 # Settings
-It is all configured in automatic by default but, the only thing you could change is the ip that you see on the Dstat page. If you would like to change it you should go to https://github.com/Energyyx/StatusPage/dstat/config/index.PHP
+It is all configured in automatic by default but, the only thing you could change is the ip that you see on the Dstat page. If you would like to change it you should go to dstat/config/index.php
 
 # ScreenShots
 First Page:

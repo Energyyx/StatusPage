@@ -100,7 +100,7 @@ header("Pragma: no-cache");
                     <font size="5" color="black">DStat page to see all requests incoming</font>
                 </div>
                 <div class="col-md-4 col-lg-5 col-xl-6 py-3 py-md-0 d-md-flex align-items-center justify-content-end">
-                    <a href="/dstat" class="btn btn-danger btn-lg">DStat</a>
+                    <a href="dstat" class="btn btn-danger btn-lg">DStat</a>
                 </div>
             </div> 
             <div class="row footer-content">

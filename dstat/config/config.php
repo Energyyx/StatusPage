@@ -5,8 +5,7 @@
 $sitename = 'EnergyyxDev - Dstat';
 
 
-//Bit or byte
-// US=bit and/et EU= octet
+
 $zone = 'US';
 
 //Data transferred or received

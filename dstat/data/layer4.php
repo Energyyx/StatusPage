@@ -7,10 +7,12 @@ $x = time() * 1000;
 function mean($first, $second, $time, $zone)
 {
     $y = ($second - $first);
+	$mbps1 = $y / 125000;
+	$mbps = substr($mbps1, 0, strpos($mbps1, ".") + 2 );
     if ($zone == 'US') {
-        $y *= 8;
+        $mbps *= 1;
     }
-    return json_encode(array($time, $y));
+    return json_encode(array($time, $mbps));
 }
 
 function dataFetch($type, $interface)
@@ -22,5 +24,7 @@ function dataFetch($type, $interface)
 }
 
 $rtx = dataFetch(($datatype == 'TX') ? "tx" : "rx", $interface);
+
+
 echo mean($rtx[0], $rtx[1], $x, $zone);
 

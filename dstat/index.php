@@ -1,6 +1,6 @@
 <?php
 require 'config/config.php';
-$dataName = ($zone == 'EU') ? (($lang == 'FR') ? "Octets" : "Bytes") : 'Bits';
+$dataName = ($zone == 'EU') ? (($lang == 'FR') ? "Octets" : "Mbps") : 'Mbps';
 $requestLang = ($lang == 'FR') ? 'Requetes' : 'Requests';
 $perSecondLang = ($lang == 'FR') ? 'par seconde' : 'per second';
 ?>
@@ -49,7 +49,8 @@ $perSecondLang = ($lang == 'FR') ? 'par seconde' : 'per second';
                 },
             },
             title: {
-                text: "<?php $l7tit = 'Layer 7 ==> ' . $_SERVER['HTTP_HOST'] . ''; echo $l7tit;?>",
+                text: "<?php $protocol = $_SERVER['REQUEST_SCHEME'] . '://';
+                $l7tit = 'Layer 7 ==> ' . $protocol . '' . $_SERVER['HTTP_HOST'] . '' . $_SERVER['REQUEST_URI'] . ''; echo $l7tit;?>",
             },
             xAxis: {
                 type: "datetime",
@@ -120,4 +121,6 @@ $perSecondLang = ($lang == 'FR') ? 'par seconde' : 'per second';
 </script>
 </body>
 </html>
+
+
 

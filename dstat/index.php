@@ -1,8 +1,8 @@
 <?php
 require 'config/config.php';
-$dataName = ($zone == 'EU') ? (($lang == 'FR') ? "Octets" : "Mbps") : 'Mbps';
-$requestLang = ($lang == 'FR') ? 'Requetes' : 'Requests';
-$perSecondLang = ($lang == 'FR') ? 'par seconde' : 'per second';
+$dataName = ($zone == 'EU') ? (($lang == 'EN') ? "Mbps" : "Mbps") : 'Mbps';
+$requestLang = ($lang == 'EN') ? 'Requests' : 'Requests';
+$perSecondLang = ($lang == 'EN') ? 'per second' : 'per second';
 ?>
 <title><?php echo $sitename; ?></title>
 
